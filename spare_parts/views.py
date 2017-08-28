@@ -7,7 +7,7 @@ from django.views import View
 
 def test_home(request):
 
-	html_ = """
+    html_ = """
 
 <html lang="en-US">
 <head>   
@@ -22,14 +22,16 @@ def test_home(request):
 </html>
 
 """
-	return HttpResponse(html_)
+    return HttpResponse(html_)
+
 
 def home(request):
 
-	return render(request, "base.html", {"value", True})
+    return render(request, "base.html", {'value': True})
+
 
 class ContactView(View):
-	def get(self, request, *args, **kwargs):
-		
-		context = []
-		return render(request, "contact.html", context)
+    def get(self, request, *args, **kwargs):
+
+        context = {}
+        return render(request, "contact.html", context)
