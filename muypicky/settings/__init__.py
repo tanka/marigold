@@ -1,7 +1,7 @@
 from .base import *
 
 # from .production import *
-print(BASE_DIR)
+# print(BASE_DIR)
 
 try:
 	from .local import *

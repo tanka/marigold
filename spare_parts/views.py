@@ -31,5 +31,5 @@ def home(request):
 class ContactView(View):
 	def get(self, request, *args, **kwargs):
 		
-		context = {}
+		context = []
 		return render(request, "contact.html", context)
