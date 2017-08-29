@@ -1,2 +1,5 @@
 spare_parts/__pycache__
 muypicky/settings/__pycache__/
+muypicky/__pycache__/
+static/
+spare_parts/migrations/__pycache__/
